@@ -5,6 +5,9 @@
     <title>My BCIT Project</title>
     <meta name="comp1800 template" content="My 1800 App">
 
+    <!-- Google Icons (Material Design)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,10 +52,31 @@
                     <p class="card-text"></p>
                     <p>Length: <span class="card-length"></span> km</p>
                     <a class="btn btn-primary read-more" href="#">Read More</a>
+                    <i class="material-icons">bookmark_border</i>
                 </div>
             </div>
         </div>
     </template>
+
+    <main class="container my-4">
+    <h1>Saved Hikes for <span id="name-goes-here"></span></h1>
+
+    <div class="container">
+        <div id="hikeCardGroup" class="row row-cols-auto"></div>
+    </div>
+
+    <template id="savedCardTemplate">
+        <div class="card py-2 m-2 bg-light" style="width: 16rem;">
+            <img class="card-image card-img-top" src="..." alt="Hike image" />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"></p>
+                <p>Length: <span class="card-length"></span> km</p>
+                <a class="btn btn-primary read-more" href="#">Read More</a>
+            </div>
+        </div>
+    </template>
+</main>
 
     <!-- our own footer goes here -->
      <site-footer></site-footer>
